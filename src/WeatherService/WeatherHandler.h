@@ -33,8 +33,14 @@ WeatherType::type WeatherServiceHandler::GetWeather(const int64_t city) {
      // Your implementation goes here
      printf("GetWeather\n");
 
+     if (city % 2 == 0) {
+	return WeatherType::type::COLD;
+     } else {
+        return WeatherType::type::WARM;
+     }
+
     // randomly select a weather
-    return (0 == rand()%2)? WeatherType::type::COLD : WeatherType::type::WARM;
+//    return (0 == rand()%2)? WeatherType::type::COLD : WeatherType::type::WARM;
 }
 
 } // namespace vending_machine

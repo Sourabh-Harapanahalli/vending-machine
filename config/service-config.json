@@ -1,10 +1,13 @@
 {
   "order-beverage-service": {
-    "addr": "order-beverage-service",
     "port": 9090
   },
   "weather-service": {
-    "addr": "weather-service",
+    "addr": "localhost",
     "port": 9091
+  },
+  "beverage-preference-service": {
+    "addr": "localhost",
+    "port": 9092
   }
 }
